@@ -1,0 +1,32 @@
+# Application
+NODE_ENV=development
+PORT=3004
+
+# MongoDB Configuration
+MONGODB_URI=mongodb://admin:password123@localhost:27017/ref-service?authSource=admin
+
+# Kafka Configuration
+KAFKA_BROKERS=localhost:9092
+KAFKA_CLIENT_ID=referral-service
+KAFKA_GROUP_ID=referral-service-consumer
+KAFKA_RETRY_ATTEMPTS=5
+KAFKA_RETRY_DELAY=1000
+KAFKA_TIMEOUT_MS=30000
+KAFKA_REPLY_TIMEOUT_MS=5000
+
+# Application Configuration
+FRONTEND_URL=https://inskins.gg
+
+# Commission Settings
+DEFAULT_COMMISSION_RATE=0.015
+MIN_TRANSACTION_AMOUNT=1.00
+
+# Referral System Configuration
+REFERRAL_COMMISSION_RATE=0.015
+REFERRAL_MAX_COMMISSION_RATE=0.1
+REFERRAL_MIN_TRANSACTION_AMOUNT=0
+REFERRAL_AUTO_APPROVE=true
+REFERRAL_CODE_LENGTH=8
+
+# Steam API (optional)
+STEAM_API_KEY= 
